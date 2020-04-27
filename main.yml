@@ -37,6 +37,7 @@
         url: https://github.com/kahing/goofys/releases/latest/download/goofys
         dest: /usr/local/bin/goofys
         mode: '777'
+        validate_certs: no
               
     - name: Run goofys
       raw: goofys --endpoint={{minioUrl}} {{bucket}} {{directory}}
