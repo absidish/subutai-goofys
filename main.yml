@@ -33,10 +33,10 @@
         mode: '0600'
         
     - name: Download goofys
-  	  get_url:
-    	  url: https://github.com/kahing/goofys/releases/latest/download/goofys
-    	  dest: /usr/local/bin/goofys
-    	  mode: '777'
+      get_url:
+        url: https://github.com/kahing/goofys/releases/latest/download/goofys
+        dest: /usr/local/bin/goofys
+        mode: '777'
               
     - name: Run goofys
       raw: goofys --endpoint={{minioUrl}} {{bucket}} {{directory}}
