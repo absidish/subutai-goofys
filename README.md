@@ -1,5 +1,7 @@
 # subutai-goofys
 
+## Subutai Blueprint which mounts directroty to S3 storage
+
 ```shell
 
 wget https://github.com/kahing/goofys/releases/latest/download/goofys
